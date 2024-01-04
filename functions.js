@@ -56,6 +56,15 @@
 
 // // // activity 3
 
+
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
 let pin = "4949";
 let balance = 1000000;
 let attempts = 3;
@@ -64,6 +73,7 @@ let acountLock = false;
 const pinChecker = (enterPin) => {
     return enterPin === pin;
 };
+
 // this funtion checks the pin
 const withdraw = (amount) => {
     if (acountLock === false) {
@@ -76,6 +86,7 @@ const withdraw = (amount) => {
     } else {
         console.log("Account locked");
     }
+    rl.close();
 };
 
 // function for depositing 
@@ -89,6 +100,7 @@ const deposit = (amount) => {
     }else {
         console.log("Account locked");
         }
+        rl.close();
     };
 
 // function for checking the balance
@@ -98,21 +110,60 @@ const checkBalance = () => {
     } else {
         console.log("Account locked");
     }
+    rl.close();
 };
 
-// // uses the res t parameter so i can use the attempts funtion 
-const attemptTrans = (enterPin, transactionFunction, ...args) => {
+// // // input functions and atempts
+const attemptTrans = (enterPin) => {
     if (pinChecker(enterPin)) {
-        transactionFunction(...args);
+        rl.question("Please Select:\n1. Withdraw\n2. Deposit.\n3. Balance\n", (option) => {
+            switch (option) {
+                case "1": rl.question("Enter amount: ", (amount) => {
+                    withdraw(parseFloat(amount));
+                });
+                    break;
+                case "2": rl.question("Enter amoubt: ", (amount) => {
+                    deposit(parseFloat(amount));
+                });
+                    break;
+                case "3": checkBalance();
+                    break;
+                default:
+                    console.log("invalid option");
+                    rl.close();
+            }
+        });
     } else {
-        attempts --;
+            attempts --;
         console.log(`Incorrect pin. ${attempts} attempts left.`);
         if (attempts === 0) {
             console.log("Account Locked. Snooze you lose.")
             acountLock = true;
         }
     }
+    rl.close();
 };
 
-attemptTrans("4949", withdraw, 3000);
-attemptTrans("2345", withdraw, 300)
+
+rl.question("Enter you PIN: ",(enterPin) => {
+    attemptTrans(enterPin);
+});
+
+
+// // // uses the res t parameter so i can use the attempts funtion 
+// const attemptTrans = (enterPin, transactionFunction, ...args) => {
+//     if (pinChecker(enterPin)) {
+//         transactionFunction(...args);
+//     } else {
+//         attempts --;
+//         console.log(`Incorrect pin. ${attempts} attempts left.`);
+//         if (attempts === 0) {
+//             console.log("Account Locked. Snooze you lose.")
+//             acountLock = true;
+//         }
+//     }
+//     rl.close();
+// };
+
+// attemptTrans("4949", withdraw, 3000);
+// attemptTrans("2345", withdraw, 300)
