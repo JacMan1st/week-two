@@ -62,6 +62,9 @@
 //     console.lof("pop")
 // }
 
+
+
+
 // // activity 5
 
 // //this way coverts number to string
@@ -76,20 +79,21 @@
 //     }
 
 
+
 // // // with further research i came up with this function that checks 
 // // // half then checks the mirror side and compares both
 // // // but in honesty im not sure im at this level yet.
-//     function checkPalindrome(palindrome) {
-//         for (var i = 0; i < palindrome.length / 2; i++) {
-//             if (palindrome[i] !== palindrome[palindrome.length - 1 - i]) {
-//                 console.log('The word is not a palindrome!');
-//                 return;
-//             }
-//         }
-//         console.log('The word is a palindrome.');
-//     }
+    // function checkPalindrome(palindrome) {
+    //     for (var i = 0; i < palindrome.length / 2; i++) {
+    //         if (palindrome[i] !== palindrome[palindrome.length - 1 - i]) {
+    //             console.log('The word is not a palindrome!');
+    //             return;
+    //         }
+    //     }
+    //     console.log('The word is a palindrome.');
+    // }
     
-//     checkPalindrome('poop');
+    // checkPalindrome('poop');
     
 
 // // // activity 6

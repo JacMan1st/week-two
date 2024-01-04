@@ -71,22 +71,22 @@
 //////////////////////
 
 // // a forced way
-// const grid = [
-//     [' X ', ' O ', '   '],
-//     [' X ', ' X ', '   '],
-//     [' O ', '   ', '   ']
-// ];
+const grid = [
+    [' X ', ' O ', '   '],
+    [' X ', ' X ', '   '],
+    [' O ', '   ', '   ']
+];
 
 
-// function printGrid() {
-//     for (const row of grid) {
-//     console.log(row.join('|'));
-//         if(row !== grid[grid.length - 1])
-//         console.log('--------------');
-//     }
-// }
+function printGrid() {
+    for (const row of grid) {
+    console.log(row.join('|'));
+        if(row !== grid[grid.length - 1])
+        console.log('--------------');
+    }
+}
 
-// printGrid();
+printGrid();
 
 
 // // // two compact way to do it
