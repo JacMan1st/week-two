@@ -1,5 +1,5 @@
 
-// // activity 1
+// // ACTIVITY 1 // /
 
 // let favSongs = [
 //     "Enter the sandman",
@@ -16,7 +16,7 @@
 
 // console.log(favSongs);
 
-// // activity 2
+// // ACTIVITY 2 // //
 
 // // Using map() to double each number in the array
 // const nums = [1, 2, 3, 4, 5];
@@ -43,8 +43,7 @@ console.log(`Original: ${names}`)
 console.log(`The number of characters in each: ${nameCount}`)
 
 
-// // activity 3
-//////////////
+// // ACTIVITY 3 // //
 
 // let myDrinks = [
 //     "beer",

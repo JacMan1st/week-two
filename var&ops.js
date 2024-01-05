@@ -1,6 +1,6 @@
 // // day 1
 
-// // activity 1
+// // ACTIVITY 1 // //
 
 // const myname = "JacMan";
 // let myAge = 34;
@@ -15,7 +15,7 @@
 // console.log(line)
 
 
-// // // activity 2
+// // // ACTIVITY 2 // //
 
 // let breky = "crumpet";
 // let breky2 = "porridge";
@@ -35,7 +35,7 @@
 // console.log(`${tmoz}`);
 
 
-// // activity 3
+// // ACTIVITY 3 // // 
 
 // const bDay = new Date(2024, 4, 2); 
 // const today = new Date();
@@ -44,49 +44,49 @@
 
 // console.log(`It's ${daysLeft} days until I'm 17 again.`);
 
-// // activity 4
+// // ACTIVITY 4 // //
 
-// let space1 = "X";
-// let space2 = "X"; 
-// let space3 = "O";
-// let space4 = "O";
-// let space5 = "X";
-// let space6 = "O";
-// let space7 = "X";
-// let space8 = "O";
-// let space9 = "X";
+let space1 = "X";
+let space2 = "X"; 
+let space3 = "O";
+let space4 = "O";
+let space5 = "X";
+let space6 = "O";
+let space7 = "X";
+let space8 = "O";
+let space9 = "X";
 
-// console.log("   |   |   ")
-// console.log(` ${space1} | ${space3} |   `)
-// console.log("   |   |   ")
-// console.log("--------------")
-// console.log("   |   |   ")
-// console.log(` ${space5} | ${space7} |   `)
-// console.log("   |   |   ")
-// console.log("--------------")
-// console.log("   |   |   ")
-// console.log(` ${space8} |   |   `)
-// console.log("   |   |   ")
+console.log("   |   |   ")
+console.log(` ${space1} | ${space3} |   `)
+console.log("   |   |   ")
+console.log("--------------")
+console.log("   |   |   ")
+console.log(` ${space5} | ${space7} |   `)
+console.log("   |   |   ")
+console.log("--------------")
+console.log("   |   |   ")
+console.log(` ${space8} |   |   `)
+console.log("   |   |   ")
 
 //////////////////////
 
-// // a forced way
-const grid = [
-    [' X ', ' O ', '   '],
-    [' X ', ' X ', '   '],
-    [' O ', '   ', '   ']
-];
+// // // a forced way
+// const grid = [
+//     [' X ', ' O ', '   '],
+//     [' X ', ' X ', '   '],
+//     [' O ', '   ', '   ']
+// ];
 
 
-function printGrid() {
-    for (const row of grid) {
-    console.log(row.join('|'));
-        if(row !== grid[grid.length - 1])
-        console.log('--------------');
-    }
-}
+// function printGrid() {
+//     for (const row of grid) {
+//     console.log(row.join('|'));
+//         if(row !== grid[grid.length - 1])
+//         console.log('--------------');
+//     }
+// }
 
-printGrid();
+// printGrid();
 
 
 // // // two compact way to do it

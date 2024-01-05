@@ -1,5 +1,5 @@
 
-// // activity 1
+// // ACTIVITY 1 // //
 
 // let age = 34;
 // let country = "UK"
@@ -12,7 +12,7 @@
 //     console.log("Sorry, you're not old enough.")
 // }
 
-// // activity 2
+// // ACTIVITY 2 // //
 
 // let topping1 = "Pepperoni"
 // let topping2 = "Meatballs"
@@ -30,7 +30,7 @@
 //         break;
 // }
 
-// // activity 3
+// // ACTIVITY 3 // //
 
 // let password = "pineapple";
 
@@ -48,7 +48,7 @@
 //     console.log("Something else")
 // }
 
-// //activity 4
+// // ACTIVITY 4 // //
 
 // let num = 0;
 
@@ -65,7 +65,7 @@
 
 
 
-// // activity 5
+// // ACTIVITY 5 // // 
 
 // //this way coverts number to string
 // let num = 1221; 
@@ -96,7 +96,7 @@
     // checkPalindrome('poop');
     
 
-// // // activity 6
+// // // ACTIVITY 6 // //
 
 // let time = 17.31;
 // let placeOfWork = "Codenation"
@@ -114,7 +114,7 @@
 // // // theres are cheeky hour where im lost in space and time.
 
 
-// // activity 7
+// // ACTIVITY 7 // //
 
 // let str = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
 // let newStr = str.toLowerCase();
@@ -141,7 +141,7 @@
 // console.log(maxIndex);
 
 
-// // activity 8
+// // ACTIVITY 8 // //
 
 // let word = "cosmic";
 
@@ -152,7 +152,7 @@
 // }
 
 
-// // activity 9
+// // ACTIVITY 9 // // 
 
 let num1 = 27596;
 let num2 = 52489;

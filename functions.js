@@ -30,9 +30,10 @@
 
 // }
 // console.log(addUp(23, 42));
+///////////////
 
+// // // ACTIVITY 1 // //
 
-// // // activity 1
 // const factorial = (n) => {
 //     if ((n === 0) || (n === 1)) {
 //         return 1;
@@ -43,7 +44,7 @@
 // console.log(factorial (33));
 
 
-// // //  // activity 2
+// // ACTIVITY 2 // //
 // let orderCount = 6;
 
 // const takeOder = (topping, topping2) =>{
