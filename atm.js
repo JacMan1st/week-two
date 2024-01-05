@@ -57,7 +57,7 @@ const attemptTrans = async () => {
 
     if (pinChecker(enterPin)) {
         let option = await askQuestion(
-            "Please Select:\n1. Withdraw\n2. Deposit.\n3. Balance\n"
+            "Please Select:\n1. Withdraw\n2. Deposit.\n3. Balance\n4. Exit\n"
         );
             
         switch (option) {
@@ -71,7 +71,11 @@ const attemptTrans = async () => {
                 break;
             case "3": 
                 checkBalance();
-            break;
+                break;
+            case "4":
+                console.log("Exiting...");
+                rl.close();
+                return;
             default:
                 console.log("Transation failed.");
         }
@@ -84,6 +88,7 @@ const attemptTrans = async () => {
         }
     }
     rl.close();
+    return;
 };
 
 
