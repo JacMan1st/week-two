@@ -21,7 +21,7 @@ const withdraw = (amount) => {
             balance -= amount;
             console.log(`Withdrawal successful. Remaining balance: £${balance}.`);
         } else {
-            console.lof("Unsuccessful transaction. Please try again.");
+            console.log("Unsuccessful transaction. Please try again.");
             }
     } else {
         console.log("Account locked");
@@ -53,6 +53,7 @@ const checkBalance = () => {
 
 // // // input functions and atempts
 const attemptTrans = async () => {
+    while (attempts > 0 && acountLock === false) {
     let enterPin = await askQuestion("Enter PIN: ");
 
     if (pinChecker(enterPin)) {
@@ -85,6 +86,7 @@ const attemptTrans = async () => {
         if (attempts === 0) {
             console.log("Account Locked. Snooze you lose.")
             acountLock = true;
+            }
         }
     }
     rl.close();
