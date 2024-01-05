@@ -32,6 +32,7 @@ const withdraw = (amount) => {
 const deposit = (amount) => {
     if (acountLock === false) {
         if (amount > 0) {
+            balance += amount;
             console.log(`Deppsit sussess. New balance £${balance}.`);
         } else {
             console.log("Unsuccessful transaction.");
